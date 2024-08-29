@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classmates</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <script>
+        const myClassmates = [
+            {
+                Human: {
+                    "Name": "Nirgi",
+                    color: "Green",
+                    "Hair color": "Brown",  
+                    "Legs": "2",                 
+                    "Hands": "2",            
+                    "Date of birth": "2005-09-13"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Henri Evert", 
+                    color: "White",
+                    "Hair color": "Brown",  
+                    "Legs": "2",                
+                    "Hands": "2",            
+                    "Date of birth": "2006-04-15"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Kristo Kuurits", 
+                    color: "White",
+                    "Hair color": "Brown",  
+                    "Legs": "2",                
+                    "Hands": "2",            
+                    "Date of birth": "2006-04-17"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Marken Lemming",   
+                    color: "Brown",
+                    "Hair color": "Brown",  
+                    "Legs": "1.5",              
+                    "Hands": "2",            
+                    "Date of birth": "2006-09-13"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Ingvar Rohusaar", 
+                    color: "White",
+                    "Hair color": "Brown",  
+                    "Legs": "2",                
+                    "Hands": "2",            
+                    "Date of birth": "2006-02-15"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Karl",
+                    color: "White",
+                    "Hair color": "Brown",  
+                    "Legs": "0",                 
+                    "Hands": "2",            
+                    "Date of birth": "2004-11-22"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Rasmus Kasemaa",  
+                    color: "White",
+                    "Hair color": "Brown",  
+                    "Legs": "2",               
+                    "Hands": "2",            
+                    "Date of birth": "2006-11-05"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Jeesus",
+                    color: "Brown",
+                    "Hair color": "Brown",  
+                    "Legs": "2",                 
+                    "Hands": "2",            
+                    "Date of birth": "0"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Kristjan Juht", 
+                    color: "White",
+                    "Hair color": "Brown",  
+                    "Legs": "2",                
+                    "Hands": "2",            
+                    "Date of birth": "2005-02-20"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Markus Väli",    
+                    color: "White",
+                    "Hair color": "Brown",  
+                    "Legs": "2",             
+                    "Hands": "2",            
+                    "Date of birth": "2005-10-18"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Jan",   
+                    color: "White",
+                    "Hair color": "Brown",  
+                    "Legs": "2",              
+                    "Hands": "2",            
+                    "Date of birth": "2005-04-18"  
+                }
+            },
+            {
+                Human: {
+                    "Name": "Patric Evert",  
+                    color: "White",
+                    "Hair color": "Brown",  
+                    "Legs": "2",               
+                    "Hands": "2",            
+                    "Date of birth": "2005-12-18"  
+                }
+            },
+            {
+            Human: {
+                "Name": "Robin Aas",  
+                color: "White",
+                "Hair color": "Brown",  
+                "Legs": "2",               
+                "Hands": "2",            
+                "Date of birth": "2006-03-18"  
+            }
+        }
+        ];
+
+        document.querySelector('#header').innerHTML = `
+          <div id="json">
+            <h1>Classmates</h1>
+            ${myClassmates.map(classmate => `
+              <div class="classmate">
+                <p>Name: ${classmate.Human.Name}</p>
+                <p>Color: ${classmate.Human.color}</p>
+                <p>Hair color: ${classmate.Human["Hair color"]}</p>
+                <p>Legs: ${classmate.Human.Legs}</p>
+                <p>Date of birth: ${classmate.Human["Date of birth"]}</p>
+              </div>
+            `).join('')}
+          </div>
+        `;
+    </script>
+</body>
+</html>

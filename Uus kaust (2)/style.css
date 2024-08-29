@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+#json {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+.classmate {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
